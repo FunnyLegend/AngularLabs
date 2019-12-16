@@ -1,0 +1,6 @@
+<input [value]="currentItem.name"
+      (input)="currentItem.name=$event.target.value" >
+<button (click)="currentItem.name=''" [disabled]="currentItem.name===''" >Delete</button>
+ 
+<p>Result: {{currentItem.name}}</p>
+
